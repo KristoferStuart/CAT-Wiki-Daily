@@ -1,0 +1,23 @@
+{
+  "name": "cat-wiki-daily",
+  "version": "1.0.0",
+  "description": "Bluesky Bot that posts a daily article",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kristofer Stuart",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@atproto/api": "^0.13.33",
+    "better-sqlite3": "^11.8.1",
+    "dotenv": "^16.4.7",
+    "node-cron": "^3.0.3",
+    "prettier": "^3.4.2",
+    "puppeteer": "^24.2.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node-cron": "^3.0.11"
+  }
+}
