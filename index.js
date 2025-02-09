@@ -124,7 +124,9 @@ async function main() {
     "#vector-page-titlebar-toc",
   ];
   for (let e = 0; e < elemRemoveList.length; e++) {
-    await page.$eval(elemRemoveList[e], (element) => element.remove());
+    try {
+      await page.$eval(elemRemoveList[e], (element) => element.remove());
+    } catch (err) {console.log(err); continue;}
   }
 
   const dim = { w: 800, h: 600 };
