@@ -119,7 +119,6 @@ async function main() {
   );
   const elemRemoveList = [
     ".vector-header-container",
-    ".sitenotice",
     ".vector-page-toolbar-container",
     "#vector-page-titlebar-toc",
   ];
@@ -147,7 +146,7 @@ async function main() {
   });
   const uploadedBlob = await agent.uploadBlob(img);
   const text = new RichText({
-    text: `Hey everybody how's it going hope you're having a lovely day!\n\nToday's article is "${article}".\nhttps://wiki.rossmanngroup.com/wiki/${encodeURIComponent(article)}`,
+    text: `Hey everybody how's it going hope you're having a lovely day!\n\nToday's article is "${article}".\nhttps://wiki.rossmanngroup.com/wiki/${encodeURIComponent(article)}\n\n#consumerrights`,
   });
   await text.detectFacets(agent);
 
